@@ -1,74 +1,20 @@
-/* Basic Reset */
-* {
-    margin: 0;
+*{
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+.wrapper{
+    background: url(milky-way-5295160_1280.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
-
-/* Navbar Styling */
-.navbar {
-    background-color: #333;
-    padding: 10px 20px;
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
 }
+.logo{
+    width: 140px;
+    height: auto;
+    padding: 20px 100px;
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #f39c12;
-}
-
-/* Content Styling */
-.content {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.content h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.details {
-    font-size: 1rem;
-    color: #555;
-}
-
-.details strong {
-    color: #333;
-}
-
-.details a {
-    color: #f39c12;
-    text-decoration: none;
-}
-
-.details a:hover {
-    text-decoration: underline;
 }
