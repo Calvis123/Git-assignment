@@ -7,36 +7,37 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="relative w-full h-[250px] overflow-hidden">
-      <!-- Blurry Image -->
-      <img
-        src="https://images.unsplash.com/photo-1545486332-9e0999c535b2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2t8ZW58MHx8MHx8fDA%3D"
-        alt="Wallpaper Image"
-        class="w-full h-full object-cover filter blur-sm"
-      />
-      
+
+    <!-- Image on the top -->
+    <div class="relative w-full h-[180px] md:h-[280px] lg:h-[380px] overflow-hidden">
       <!-- Jumbotron Text -->
       <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-        <h1 class="text-white text-4xl font-bold">My Personal Projects</h1>
+        <h1 class="text-green-500 text-4xl sm:text-5xl md:text-6xl font-bold text-center px-6">My Personal Projects</h1>
       </div>
-    
       <!-- Breadcrumbs -->
-      <div class="absolute mb-12 bottom-4 left-1/2 transform -translate-x-1/2 text-white flex space-x-2 text-sm">
-        <a href="index.html" class="hover:text-gray-300">Home</a>
+      <div class="absolute mb-24 bottom-4 left-1/2 transform -translate-x-1/2 text-white flex space-x-2 text-sm sm:text-base md:text-lg">
+        <a href="index.html" class="hover:text-green-600 text-xl text-semibold">Home</a>
         <span>&gt;</span>
-        <a class="hover:text-gray-300">Projects</a>
+        <a class="hover:text-gray-300 text-xl text-semibold">Projects</a>
       </div>
     </div>
-    
-    
-    
-    <div class="mt-60 grid grid-cols-1 sm:grid-cols-2 gap-14 mx-auto max-w-7xl px-40">
+
+<!-- Section Title: Featured Projects -->
+<div class="text-center mt-10">
+  <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+    Featured Projects
+  </h1>
+</div>
+
+<!-- Cards Section -->
+<div class="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-14 mx-auto max-w-7xl px-6 sm:px-12 md:px-16 lg:px-32">
+  
   <!-- Card 1: Website Building Project -->
-  <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-98 mx-auto">
+  <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-full mx-auto">
     <a href="#">
       <img
-        class="rounded-t-lg w-full h-72 object-cover"
-        src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGV2ZW50fGVufDB8fDB8fHww"
+        class="rounded-t-lg w-full h-56 sm:h-64 md:h-72 lg:h-80 xl:h-[350px] object-cover"
+        src="https://images.unsplash.com/photo-1558174685-430919a96c8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D"
         alt="Website Development"
       />
     </a>
@@ -47,23 +48,24 @@
         </h5>
       </a>
       <p class="mb-3 text-gray-700">
-        A project focused on developing dynamic and responsive websites. From e-commerce to portfolio sites, this project showcased the power of modern web technologies like React, Next.js, and Node.js.
+        A project focused on developing dynamic and responsive websites.
+        From e-commerce to portfolio sites, this project showcased the power
+        of modern web technologies like React, Next.js, and Node.js.
       </p>
-      <a
-        href="#"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700"
-      >
-        Explore Project
-      </a>
+      <div class="flex justify-center">
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+          Explore Project
+        </a>
+      </div>
     </div>
   </div>
 
   <!-- Card 2: Game Development Project -->
-  <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-98 mx-auto">
+  <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-full mx-auto">
     <a href="#">
       <img
-        class="rounded-t-lg w-full h-72 object-cover"
-        src="https://plus.unsplash.com/premium_photo-1679547202671-f9dbbf466db4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGV2ZW50fGVufDB8fDB8fHww"
+        class="rounded-t-lg w-full h-56 sm:h-64 md:h-72 lg:h-80 xl:h-[350px] object-cover"
+        src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGdhbWluZ3xlbnwwfHwwfHx8MA%3D%3D"
         alt="Game Development"
       />
     </a>
@@ -74,23 +76,24 @@
         </h5>
       </a>
       <p class="mb-3 text-gray-700">
-        A thrilling game development project using Unity and C#. The project focused on building immersive 3D environments and gameplay mechanics, showcasing cutting-edge graphics and player interaction.
+        A thrilling game development project using Unity and C#. The project
+        focused on building immersive 3D environments and gameplay
+        mechanics, showcasing cutting-edge graphics and player interaction.
       </p>
-      <a
-        href="#"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700"
-      >
-        Explore Project
-      </a>
+      <div class="flex justify-center">
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+          Explore Project
+        </a>
+      </div>
     </div>
   </div>
 
   <!-- Card 3: Mobile App Development Project -->
-  <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-98 mx-auto">
+  <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-full mx-auto">
     <a href="#">
       <img
-        class="rounded-t-lg w-full h-72 object-cover"
-        src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGV2ZW50fGVufDB8fDB8fHww"
+        class="rounded-t-lg w-full h-56 sm:h-64 md:h-72 lg:h-80 xl:h-[350px] object-cover"
+        src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D"
         alt="Mobile App Development"
       />
     </a>
@@ -101,23 +104,25 @@
         </h5>
       </a>
       <p class="mb-3 text-gray-700">
-        A project dedicated to creating feature-rich mobile applications for iOS and Android. The project focused on integrating advanced features like push notifications, real-time databases, and location services.
+        A project dedicated to creating feature-rich mobile applications for
+        iOS and Android. The project focused on integrating advanced
+        features like push notifications, real-time databases, and location
+        services.
       </p>
-      <a
-        href="#"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700"
-      >
-        Explore Project
-      </a>
+      <div class="flex justify-center">
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+          Explore Project
+        </a>
+      </div>
     </div>
   </div>
 
   <!-- Card 4: Augmented Reality (AR) Project -->
-  <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-98 mx-auto">
+  <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-full mx-auto">
     <a href="#">
       <img
-        class="rounded-t-lg w-full h-72 object-cover"
-        src="https://images.unsplash.com/photo-1686397140330-40f4c9919b58?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWklMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D"
+        class="rounded-t-lg w-full h-56 sm:h-64 md:h-72 lg:h-80 xl:h-[350px] object-cover"
+        src="https://images.unsplash.com/photo-1627750797184-1266b8c5de81?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXJ8ZW58MHx8MHx8fDA%3D"
         alt="AR Project"
       />
     </a>
@@ -128,23 +133,33 @@
         </h5>
       </a>
       <p class="mb-3 text-gray-700">
-        A cutting-edge AR project that brings interactive digital elements to real-world environments. Using ARKit and ARCore, this project focused on creating immersive experiences for education and entertainment.
+        A cutting-edge AR project that brings interactive digital elements
+        to real-world environments. Using ARKit and ARCore, this project
+        focused on creating immersive experiences for education and
+        entertainment.
       </p>
-      <a
-        href="#"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700"
-      >
-        Explore Project
-      </a>
+      <div class="flex justify-center">
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+          Explore Project
+        </a>
+      </div>
     </div>
   </div>
+
 </div>
 
-    
-    
-    
-    
-    
-    
+
+    <!-- Image on the bottom -->
+    <div class="relative w-full h-[500px] md:h-[600px] overflow-hidden my-32">
+      <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="text-center text-white px-6 md:px-12 mx-6">
+          <h2 class="text-green-600 text-3xl md:text-4xl font-semibold mb-4 mx-6">Why I'm the Best Candidate for the Job</h2>
+          <p class="text-lg md:text-xl mx-6">
+            With a proven track record of delivering innovative solutions and a passion for excellence, I bring both technical expertise and a deep understanding of business needs. My ability to think outside the box, collaborate across teams, and deliver high-quality results makes me an invaluable asset to your team.
+          </p>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
