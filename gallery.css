@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+}
+footer{
+    text-align: center;
+    background-color: rgb(73, 71, 71);
+    height: 50px;
+}
+header{
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li :hover{
+    text-decoration: underline;
+    
+}
+nav .logo img{
+    width: 15%;
+}
+table tr td img{
+    width: 100%;
+}
+h1 p{
+    text-align: center;
+    color: brown;
+}
+.cards{
+    background-color: rgb(225, 235, 235);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}@media screen and (max-width: 768px){
+    body{
+        background-color: aqua;
+    }
+    nav .logo img{
+        width: 20%;
+    }
+    
+}
