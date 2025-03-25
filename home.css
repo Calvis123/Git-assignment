@@ -1,0 +1,50 @@
+*{
+    margin: 0%;
+}
+footer{
+    text-align: center;
+    background-color: rgb(73, 71, 71);
+    height: 50px;
+}
+header{
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li :hover{
+    text-decoration: underline;
+    
+}
+nav .logo img{
+    width: 15%;
+}
+.jp{
+    text-align: center;
+    color: brown;
+}
+.jp h2{
+    color: rgb(26, 58, 37);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}@media screen and (max-width: 768px){
+    body{
+        background-color: aqua;
+    }
+    nav .logo img{
+        width: 20%;
+    }
+    
+}
