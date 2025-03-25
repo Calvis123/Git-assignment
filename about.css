@@ -1,0 +1,67 @@
+footer{
+    text-align: center;
+    background-color: rgb(73, 71, 71);
+    height: 50px;
+}
+header{
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li :hover{
+    text-decoration: underline;
+    
+}
+nav .logo img{
+    width: 15%;
+}
+.values{
+    text-align: center;
+}
+.values img{
+    padding: 30px;
+}
+h2{
+    color: brown;
+}
+table td{
+    left: 30%;
+}
+table tr td{
+    padding: 20px;
+    text-align: center;
+    color: red;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: aqua;
+    }
+    nav .logo img{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 449px) {
+
+    
+    table tr{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
